@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  background-color: #222831;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+  z-index: 99999px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar2 {
+  right: -100%;
+  display: block;
+  transition: all 0.3s ease;
 }
+
+#navbar2.show {
+  right: 0;
+}
+
+i {
+  cursor: pointer;
+}
+
+.projek {
+  transition: all 0.3s ease;
+}
+
+.projects:hover .projek {
+  bottom: 0;
+}
+
+
+
+    /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    /* membuat background dari scrollbar */
+    /* kasih warna transparan agar lebih estetik  */
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+  
+    /* membuat styling pada batang atau bar scrollbar  */
+    /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+    ::-webkit-scrollbar-thumb {
+      background-color: #222831;
+      border-radius: 20px;
+      border: 6px solid transparent;
+      background-clip: content-box;
+    }
+
+    /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
