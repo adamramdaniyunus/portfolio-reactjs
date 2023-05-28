@@ -22,7 +22,7 @@ const Navbar = () => {
 				</nav>
 			</div>
 			<div className="navbar lg:hidden lg:right-0 fixed z-50" id="navbar2">
-				<nav className="nav text-third lg:hidden inline-block z-50 flex-col text-left p-4 bg-primary h-screen top-full w-[10rem]">
+				<nav className="nav text-third lg:hidden inline-block z-50 flex-col absolute text-left p-4 bg-primary h-screen top-full w-[10rem]">
 					<i className="bi bi-arrow-right lg:hidden" onClick={Open}></i>
 					<a href="#home" className="hover:text-[#393E46BF]">Home</a>
 					<a href="#about" className="hover:text-[#393E46BF]">About</a>
