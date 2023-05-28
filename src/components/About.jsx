@@ -14,11 +14,11 @@ const About = () => {
 					</p>
 
 					<div className="flex justify-end lg:right-0 lg:relative fixed right-[-100%] py-6">
-						<img src="assets/panah2.png" className="" width="100"/>
+						<img src="assets/panah2.png" className="" width="100" alt="good"/>
 					</div>
 				</div>
 				<div className="p-6 flex justify-center">
-					<img src="assets/dua.png" />
+					<img src="assets/dua.png" alt="good"/>
 				</div>
 			</div>
 		</>
