@@ -12,8 +12,8 @@ const Navbar = () => {
 				<a href="#home" className="text-third font-semibold">Ada<span className="text-secondary">M</span>r.</a>
 			</div>
 			<i className=" menu bi bi-filter-right text-third text-2xl lg:hidden" id="menu" onClick={Open}></i>
-			<div className="navbar lg:relative lg:right-0 right-[-300px] z-50 fixed" id="navbar">
-				<nav className="nav text-third lg:flex inline-block z-50">
+			<div className="navbar lg:flex hidden z-50" id="navbar">
+				<nav className="nav text-third lg:flex  inline-block z-50">
 					<i className="bi bi-arrow-right lg:hidden" onClick={Open}></i>
 					<a href="#home" className="hover:text-[#393E46BF]">Home</a>
 					<a href="#about" className="hover:text-[#393E46BF]">About</a>
@@ -21,8 +21,8 @@ const Navbar = () => {
 					<a href="#contact" className="hover:text-[#393E46BF]">Contact</a>
 				</nav>
 			</div>
-			<div className="navbar lg:hidden lg:right-0 fixed z-50" id="navbar2">
-				<nav className="nav text-third lg:hidden inline-block z-50 flex-col absolute text-left p-4 bg-primary h-screen top-full w-[10rem]">
+			<div className="navbar lg:hidden absolute z-50" id="navbar2">
+				<nav className="nav text-third flex-col text-left p-4 bg-primary h-screen top-full w-[10rem]">
 					<i className="bi bi-arrow-right lg:hidden" onClick={Open}></i>
 					<a href="#home" className="hover:text-[#393E46BF]">Home</a>
 					<a href="#about" className="hover:text-[#393E46BF]">About</a>
